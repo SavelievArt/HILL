@@ -1,0 +1,5 @@
+Constructs an ifstream object, initially associated with the file identified by its first argument (filename),
+open with the mode specified by mode.
+Internally, its istream base constructor is passed a pointer to a newly constructed filebuf object
+(the internal file stream buffer). Then, filebuf::open is called with filename and mode as arguments.
+If the file cannot be opened, the stream's failbit flag is set.
